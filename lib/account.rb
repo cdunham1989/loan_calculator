@@ -5,10 +5,6 @@ class Account
         @loan_balance = loan_balance
     end
 
-    def show_balance
-        @loan_balance
-    end
-
     def receive_payment(amount)
         @loan_balance -= amount
     end
