@@ -1,14 +1,15 @@
 class Account
+    attr_reader :loan_balance
 
     def initialize(loan_balance)
         @loan_balance = loan_balance
     end
 
-    def loan_balance
+    def show_balance
         @loan_balance
     end
 
-    def make_payment(amount)
+    def receive_payment(amount)
         @loan_balance -= amount
     end
 
