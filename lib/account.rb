@@ -8,7 +8,12 @@ class Account
         @loan_balance
     end
 
-    def receive_payment(amount)
+    def make_payment(amount)
         @loan_balance -= amount
+    end
+
+    def calculate_interest
+        interest = @loan_balance/100
+        @loan_balance += interest
     end
 end
