@@ -10,11 +10,11 @@ I'm focussing mostly on the logic and test driving for now but may include some 
 ```
 As a borrower,
 So I can borrow money,
-I need to be able to take out a loan of a set amount
+I need to be able to take out a loan of a set amount *
 
 As a borrower,
 So I can payback my loan,
-I need to be able to make payments to my bank
+I need to be able to make payments to my bank *
 
 As a borrower,
 So I can ensure my loan is being paid off,
