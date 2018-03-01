@@ -20,6 +20,6 @@ describe Account do
 
     it 'can calculate interest to be added to the balance at 1%' do
         @account.calculate_interest
-        expect(@account.loan_balance).to eq(10100)
+        expect(@account.calculate_interest).to eq(100)
     end
 end

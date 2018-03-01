@@ -11,6 +11,5 @@ class Account
 
     def calculate_interest
         interest = @loan_balance/100
-        @loan_balance += interest
     end
 end
