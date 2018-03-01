@@ -28,5 +28,9 @@ describe 'bank' do
             @bank.add_interest
             expect(@bank.borrowers.first.account.loan_balance).to eq(10100)
         end
+
+        it 'can calculate what the minimum payment of 0.5% is on the account' do
+            expect(@bank.minimum_payment).to eq(50)
+        end
     end
 end

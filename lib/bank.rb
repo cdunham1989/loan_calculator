@@ -18,4 +18,9 @@ class Bank
         @borrower = borrowers.first
         @borrower.account.receive_interest(self.calculate_interest)
     end
+
+    def minimum_payment
+        @borrower = borrowers.first
+        minimum_payment = @borrower.account.loan_balance/200
+    end
 end
