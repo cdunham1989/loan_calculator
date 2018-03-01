@@ -9,4 +9,9 @@ class Bank
         @borrowers << (name = Borrower.new)
     end
 
+    def calculate_interest
+        @borrower = borrowers.first
+        interest = @borrower.account.loan_balance/100
+    end
+
 end

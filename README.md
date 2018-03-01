@@ -28,7 +28,7 @@ I need to know how many more payments of the minimum amount it will take to pay 
 
 As a bank,
 So I can keep track of my borrowers,
-I need to be able to see a list of all the borrowers I have
+I need to be able to see a list of all the borrowers I have *
 
 As a bank,
 So I can make money on the loan,

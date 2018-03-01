@@ -8,8 +8,4 @@ class Account
     def receive_payment(amount)
         @loan_balance -= amount
     end
-
-    def calculate_interest
-        interest = @loan_balance/100
-    end
 end

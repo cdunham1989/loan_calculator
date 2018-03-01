@@ -15,4 +15,9 @@ describe 'bank' do
         @bank.new_borrower("john")
         expect(@bank.borrowers.length).to eq(1)
     end
+
+    it 'can calculate interest to be added to the balance at 1%' do
+        @bank.new_borrower("john")
+        expect(@bank.calculate_interest).to eq(100)
+    end
 end
