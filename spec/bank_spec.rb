@@ -2,7 +2,7 @@ require 'account'
 require 'bank'
 require 'borrower'
 
-describe 'bank' do
+describe Bank do
     before(:each) do
         @bank = Bank.new
     end
