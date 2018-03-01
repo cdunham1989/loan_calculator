@@ -12,4 +12,8 @@ class Account
     def receive_interest(amount)
         @loan_balance += amount
     end
+
+    def receive_charge
+        @loan_balance += 10
+    end
 end

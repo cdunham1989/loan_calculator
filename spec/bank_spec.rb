@@ -32,5 +32,10 @@ describe Bank do
         it 'can calculate what the minimum payment of 0.5% is on the account' do
             expect(@bank.minimum_payment).to eq(50)
         end
+
+        it 'can add a charge of 10 to the account to be used when payment is not made' do
+            @bank.add_charge
+            expect(@bank.borrowers.first.account.loan_balance).to eq(10010)
+        end
     end
 end

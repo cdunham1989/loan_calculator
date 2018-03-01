@@ -10,17 +10,18 @@ class Bank
     end
 
     def calculate_interest
-        @borrower = borrowers.first
-        interest = @borrower.account.loan_balance/100
+        interest = @borrowers.first.account.loan_balance/100
     end
 
     def add_interest
-        @borrower = borrowers.first
-        @borrower.account.receive_interest(self.calculate_interest)
+        @borrowers.first.account.receive_interest(self.calculate_interest)
     end
 
     def minimum_payment
-        @borrower = borrowers.first
-        minimum_payment = @borrower.account.loan_balance/200
+        minimum_payment = @borrowers.first.account.loan_balance/200
+    end
+
+    def add_charge
+        @borrowers.first.account.receive_charge
     end
 end

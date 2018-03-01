@@ -18,11 +18,7 @@ I need to be able to make payments to my bank *
 
 As a borrower,
 So I can ensure my loan is being paid off,
-I need to know what the minimum montyly payment currently is
-
-As a borrower,
-So I know how long I will be paying off the loan
-I need to know how many more payments of the minimum amount it will take to pay off the loan
+I need to know what the minimum montyly payment currently is *
 
 ---
 
