@@ -6,7 +6,7 @@ class Borrower
     end
 
     def make_payment(amount)
-        @account.receive_payment(amount)
+        amount >= self.minimum_payment ? @account.receive_payment(amount) : "payments must be above the minimum amount"
     end
 
     def minimum_payment

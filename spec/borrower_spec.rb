@@ -22,6 +22,10 @@ describe Borrower do
             expect(@borrower.account.loan_balance).to eq(9000)
         end
 
+        it 'must make a payment above the minimum amount' do
+            expect(@borrower.make_payment(1)).to eq("payments must be above the minimum amount")
+        end
+
         it 'can see what the minimum payment is' do
             expect(@borrower.minimum_payment).to eq(50)
         end

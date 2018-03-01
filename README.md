@@ -8,6 +8,8 @@ I'm focussing mostly on the logic and test driving for now but may include some 
 ### User Stories
 
 ```
+* = completed
+
 As a borrower,
 So I can borrow money,
 I need to be able to take out a loan of a set amount *
@@ -41,5 +43,15 @@ I want to be able to add a charge to the balance for late payment *
 As a bank,
 So I can lend as much money as possible,
 I want to be able to do all these things with more than one user
+
+---
+
+Edge Cases:
+
+Minimum payments never less than 50 *
+
+Payments of less than the minimum are not accepted
+
+Payments must be a numerical value
 
 ```
