@@ -25,5 +25,10 @@ describe Borrower do
         it 'can see what the minimum payment is' do
             expect(@borrower.minimum_payment).to eq(50)
         end
+
+        it 'will not allow a minimum payment of less than 50' do
+            @borrower.make_payment(9000)
+            expect(@borrower.minimum_payment).to eq(50)
+        end
     end
 end

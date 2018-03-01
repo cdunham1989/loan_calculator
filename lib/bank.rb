@@ -18,7 +18,7 @@ class Bank
     end
 
     def minimum_payment
-        minimum_payment = @borrowers.first.account.loan_balance/200
+        @borrowers.first.account.loan_balance/200 < 50 ? minimum_payment = 50 : minimum_payment = @borrowers.first.account.loan_balance/200
     end
 
     def add_charge

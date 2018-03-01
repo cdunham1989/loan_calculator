@@ -10,6 +10,6 @@ class Borrower
     end
 
     def minimum_payment
-        @account.loan_balance/200
+        @account.loan_balance/200 < 50 ? minimum_payment = 50 : minimum_payment = @account.loan_balance/200
     end
 end

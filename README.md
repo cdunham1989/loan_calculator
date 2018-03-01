@@ -36,7 +36,7 @@ I need to know what the minimum monthly payment is *
 
 As a bank,
 So I can charge my customer for not making the monthly payment,
-I want to be able to add a charge to the balance for late payment
+I want to be able to add a charge to the balance for late payment *
 
 As a bank,
 So I can lend as much money as possible,

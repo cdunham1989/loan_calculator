@@ -11,6 +11,12 @@ describe Bank do
         expect(@bank.borrowers).to eq([])
     end
 
+    it 'will not allow a minimum payment of less than 50' do
+        @bank.new_borrower("john")
+        @bank.borrowers.first.make_payment(9000)
+        expect(@bank.minimum_payment).to eq(50)
+    end
+
     describe 'with a borrower' do
         before(:each) do
             @bank.new_borrower("john")
