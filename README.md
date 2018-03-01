@@ -14,7 +14,11 @@ I need to be able to take out a loan of a set amount
 
 As a borrower,
 So I can payback my loan,
-I need to be able to make payments to the lender
+I need to be able to make payments to my bank
+
+As a borrower,
+So I can ensure my loan is being paid off,
+I need to know what the minimum montyly payment currently is
 
 As a borrower,
 So I know how long I will be paying off the loan
@@ -22,7 +26,11 @@ I need to know how many more payments of the minimum amount it will take to pay 
 
 ---
 
-As a bank
+As a bank,
+So I can keep track of my borrowers,
+I need to be able to see a list of all the borrowers I have
+
+As a bank,
 So I can make money on the loan,
 I need to be able to add interest to the balance
 

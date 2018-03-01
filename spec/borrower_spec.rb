@@ -1,5 +1,5 @@
-require 'borrower'
 require 'account'
+require 'borrower'
 
 describe Borrower do
 
