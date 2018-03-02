@@ -50,8 +50,8 @@ Edge Cases:
 
 Minimum payments never less than 50 *
 
-Payments of less than the minimum are not accepted
+Payments of less than the minimum are not accepted *
 
-Payments must be a numerical value
+Payments must be a numerical value *
 
 ```

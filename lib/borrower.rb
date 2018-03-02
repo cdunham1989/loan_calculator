@@ -6,10 +6,16 @@ class Borrower
     end
 
     def make_payment(amount)
-        amount >= self.minimum_payment ? @account.receive_payment(amount) : "payments must be above the minimum amount"
+        amount.to_i != 0 && amount >= self.minimum_payment ? @account.receive_payment(amount) : "payments must be a number above the minimum amount"
     end
 
     def minimum_payment
         @account.loan_balance/200 < 50 ? minimum_payment = 50 : minimum_payment = @account.loan_balance/200
+    end
+
+    private
+
+    def is_number?
+        self.to_i == self
     end
 end

@@ -23,7 +23,7 @@ describe Borrower do
         end
 
         it 'must make a payment above the minimum amount' do
-            expect(@borrower.make_payment(1)).to eq("payments must be above the minimum amount")
+            expect(@borrower.make_payment(1)).to eq("payments must be a number above the minimum amount")
         end
 
         it 'can see what the minimum payment is' do
@@ -33,6 +33,10 @@ describe Borrower do
         it 'will not allow a minimum payment of less than 50' do
             @borrower.make_payment(9000)
             expect(@borrower.minimum_payment).to eq(50)
+        end
+
+        it 'will not allow a payment that isnt a number' do
+            expect(@borrower.make_payment("cheese")).to eq("payments must be a number above the minimum amount")
         end
     end
 end
