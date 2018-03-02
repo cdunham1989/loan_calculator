@@ -55,3 +55,5 @@ Payments of less than the minimum are not accepted *
 Payments must be a numerical value *
 
 ```
+
+The only part of this tech test I have not completed yet is to make this system work for multiple borrowers. This is something I will look into but for now I want to focus my time on some other bits and may come back to this at a later date.
